@@ -15,40 +15,40 @@
   <header>
     <div class="style-bar">
 
-      <button class="style bold">
+      <button class="style bold" onclick="bold()">
         <i class="bi bi-type-bold icon-style "></i>
       </button>
-      <button class="style underline">
+      <button class="style underline" onclick="underline()">
         <i class="bi bi-type-underline icon-style"></i>
       </button>
-      <button class="style italic">
+      <button class="style italic" onclick="italic()">
         <i class="bi bi-type-italic icon-style"></i>
       </button>
 
 
       <button class="style icon-style">
         <i class="bi bi-fonts icon-style">
-          <input id="font-color" type="color">
+          <input id="font-color" type="color" onchange="changeColor()">
         </i>
       </button>
 
 
-      <button class="style left">
+      <button class="style left" onclick="left()">
         <i class="bi bi-text-left icon-style"></i>
       </button>
-      <button class="style justify">
+      <button class="style justify" onclick="justify()">
         <i class="bi bi-justify icon-style"></i>
       </button>
-      <button class="style right">
+      <button class="style right" onclick="right()">
         <i class="bi bi-text-right icon-style"></i>
       </button>
-      <button class="style center">
+      <button class="style center" onclick="center()">
         <i class="bi bi-text-center icon-style"></i>
       </button>
-      <button class="style undo">
+      <button class="style undo" onclick="undo()">
         <i class="bi bi-arrow-counterclockwise icon-style"></i>
       </button>
-      <button class="style redo">
+      <button class="style redo" onclick="redo()">
         <i class="bi bi-arrow-clockwise icon-style"></i>
       </button>
 
@@ -58,6 +58,8 @@
   <main>
     <div id="content-area" class="text-area" contenteditable="true"></div>
   </main>
+
+  <script src="./src/index.js"></script>
 
 </body>
 </html>
