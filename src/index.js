@@ -27,24 +27,8 @@ function changeColor(){
   contentAreaFocus();
 }
 
-function left(){
-  document.execCommand('justifyLeft', false, null);
-  contentAreaFocus();
-}
-
-function justify(){
-  document.execCommand('justifyFull', false, null);
-  contentAreaFocus();
-}
-
-function right(){
-  document.execCommand('justifyRight', false, null);
-  contentAreaFocus();
-}
-
-function center(){
-  document.execCommand('justifyCenter', false, null);
-  contentAreaFocus();
+function alignText(alignment){
+  document.getElementById('content-area').style.textAlign = alignment;
 }
 
 function undo(){
